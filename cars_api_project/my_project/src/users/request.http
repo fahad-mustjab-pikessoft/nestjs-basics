@@ -3,9 +3,11 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "email":"beingfahad7861@gmail.com", 
+    "email":"test@gmail.com", 
     "password": "abc123456"
 }
+
+
 
 ### Find a particular user
 
@@ -25,6 +27,39 @@ PATCH http://localhost:3000/auth/2
 content-type: application/json
 
 {
-    "email": "randomEmail@gmail.com",
+    "email": "randomEmail1@gmail.com",
     "password": "randomPassword"
 }
+
+
+
+
+
+
+### set color
+GET  http://localhost:3000/auth/colors/red
+
+### Get colors;
+
+GET http://localhost:3000/auth/colors
+
+
+### Sign in 
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+    "email":"test@gmail.com", 
+    "password":"abc123456"
+}
+
+
+###signout
+POST http://localhost:3000/auth/signout
+
+###whoami
+GET http://localhost:3000/auth/whoami
+
+
+
+
